@@ -1,11 +1,8 @@
 package com.example.demos.leetcode.topquestions.easycollection.arrays;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
 
-import com.example.demos.leetcode.topquestions.easycollection.arrays.RomanToInteger;
-
+import static org.junit.jupiter.api.Assertions.*;
 
 /***
  * 
@@ -16,20 +13,20 @@ import com.example.demos.leetcode.topquestions.easycollection.arrays.RomanToInte
  */
 class RomanToIntegerTests {
 
-	@Test
-	void test_CDLVIII_should_be_453() {
-		/* CDLVIII = 453 */
+    @Test
+    void test_CDLVIII_should_be_453() {
+        /* CDLVIII = 453 */
 
-		RomanToInteger rToI = new RomanToInteger();
-		int intVal = rToI.convert("CDLVIII");
-		assertEquals(453, intVal);
-	}
+        RomanToInteger rToI = new RomanToInteger();
+        int intVal = rToI.convert("CDLVIII");
+        assertEquals(453, intVal);
+    }
 
-	@Test
-	void test_CD_should_be_400() {
-		RomanToInteger rToI = new RomanToInteger();
-		int intVal = rToI.convert("CD");
-		assertEquals(400, intVal);
-	}
+    @Test
+    void test_CD_should_be_400() {
+        RomanToInteger rToI = new RomanToInteger();
+        int intVal = rToI.convert("CD");
+        assertEquals(400, intVal);
+    }
 
 }

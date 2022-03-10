@@ -13,7 +13,7 @@ public class MyTestClass {
         int c3 = (int) c1 + (int) c2;
         System.out.println(Character.getNumericValue(c1));
 
-        Integer[] myIntArray = {1, 2, 3};
+        Integer[] myIntArray = { 1, 2, 3 };
         Arrays.asList(myIntArray).forEach(x -> System.out.println(x));
 
         // get all substrings
