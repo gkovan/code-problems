@@ -75,11 +75,11 @@
     <!-- Keep alphabetic order -->
     <pluginManagement>
       <plugins>
-        <plugin>
+<!--         <plugin>
           <groupId>com.mycila</groupId>
           <artifactId>license-maven-plugin</artifactId>
           <version>4.1</version>
-        </plugin>
+        </plugin> -->
         <plugin>
           <groupId>net.revelc.code.formatter</groupId>
           <artifactId>formatter-maven-plugin</artifactId>
@@ -152,6 +152,25 @@
   </build>
   <profiles>
     <profile>
+        <id>failsafe</id>
+        <build>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-failsafe-plugin</artifactId>
+                    <version>2.22.0</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>integration-test</goal>
+                                <goal>verify</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </build>
+    </profile>  
+    <profile>
       <id>qa</id>
       <activation>
         <property>
@@ -160,7 +179,7 @@
       </activation>
       <build>
         <plugins>
-          <plugin>
+<!--           <plugin>
             <groupId>com.mycila</groupId>
             <artifactId>license-maven-plugin</artifactId>
             <configuration>
@@ -179,7 +198,7 @@
                 </goals>
               </execution>
             </executions>
-          </plugin>
+          </plugin> -->
           <plugin>
             <groupId>net.revelc.code.formatter</groupId>
             <artifactId>formatter-maven-plugin</artifactId>
