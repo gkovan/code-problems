@@ -21,5 +21,11 @@ Run the following command to format the source code and organize the imports as 
 mvn process-sources
 ```
 
+Maven failsafe plugin has been integrated into the code base.
+To run the failsafe integration tests run the command:
+
+```
+mvn verify -P failsafe
+```
 
 This code base is available under the Apache License, version 2.
