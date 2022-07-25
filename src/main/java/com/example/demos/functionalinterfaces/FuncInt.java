@@ -1,6 +1,5 @@
 package com.example.demos.functionalinterfaces;
 
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Consumer;
@@ -32,13 +31,17 @@ public class FuncInt {
     public static void formatResponseUsingIfElseIf(String format, MyResponse response) {
         if ("csv".equals(format)) {
             response.setContentType("csv");
-        } else if ("html".equals(format)) {
+        }
+        else if ("html".equals(format)) {
             response.setContentType("html");
-        } else if ("pdf".equals(format)) {
+        }
+        else if ("pdf".equals(format)) {
             response.setContentType("pdf");
-        } else if ("xml".equals(format)) {
+        }
+        else if ("xml".equals(format)) {
             response.setContentType("xml");
-        } else {
+        }
+        else {
             response.setContentType("text");
         }
     }
