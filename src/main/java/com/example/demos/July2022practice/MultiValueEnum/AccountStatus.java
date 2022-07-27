@@ -71,5 +71,7 @@ public enum AccountStatus {
             System.out.println("Account Status Full Name : " + activeStatusEnum.get().getFullName());
             System.out.println("Account Status Code : " + activeStatusEnum.get().getCode());
         }
+
+        if ( 1 == 1) { int x = 5; int y = 10; int z = x + y;}
     }
 }
