@@ -50,6 +50,11 @@ public class MyCheatSheet {
                 Integer value = (Integer) entry.getValue();
             }
 
+            mapOfRomans.forEach( (key, value) -> {
+                assert mapOfRomans.keySet().contains(key) == true;
+                assert value >= 1 && value <= 1000;
+            });
+
             /**************** Set *******************************/
             Set<Integer> mySet = new HashSet<Integer>();
             boolean mySetAddResult = mySet.add(1);
