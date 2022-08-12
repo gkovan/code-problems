@@ -23,7 +23,7 @@ public class StringPractice {
         System.out.println("Convert string Array to string List");
         List<String> strList = Arrays.asList(strArray);
         strList.forEach(s -> System.out.println(s));
-        
+
         //////////////
 
         System.out.println("map and collect to make strings in list all lower case");
@@ -35,19 +35,19 @@ public class StringPractice {
         /////////////
 
         System.out.println("map to lowercase then filter and collect strings that match `gerry`");
-        List<String> gerryString = strList.stream().map(s-> s.toLowerCase()).filter(s -> s.equals("gerry")).collect(Collectors.toList());
+        List<String> gerryString = strList.stream().map(s -> s.toLowerCase()).filter(s -> s.equals("gerry")).collect(Collectors.toList());
         gerryString.forEach(s -> System.out.println(s));
 
-        Map<String,Integer> wordCount = new HashMap<>();
+        Map<String, Integer> wordCount = new HashMap<>();
         strList.stream().map(s -> s.toLowerCase()).forEach(s -> {
             if (wordCount.get(s) == null) {
-                wordCount.put(s,1);
+                wordCount.put(s, 1);
             } else {
                 wordCount.put(s, wordCount.get(s) + 1);
             }
         });
 
-        wordCount.forEach( (word, count)-> {
+        wordCount.forEach((word, count) -> {
             System.out.println("Word: " + word + "   " + "Count: " + count);
         });
     }

@@ -50,7 +50,7 @@ public class MyCheatSheet {
                 Integer value = (Integer) entry.getValue();
             }
 
-            mapOfRomans.forEach( (key, value) -> {
+            mapOfRomans.forEach((key, value) -> {
                 assert mapOfRomans.keySet().contains(key) == true;
                 assert value >= 1 && value <= 1000;
             });
