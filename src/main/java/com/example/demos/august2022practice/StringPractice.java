@@ -50,6 +50,12 @@ public class StringPractice {
         wordCount.forEach((word, count) -> {
             System.out.println("Word: " + word + "   " + "Count: " + count);
         });
+
+
+        // initialize a Map using Map.of()
+        Map<String,Integer> hm = Map.of("gerry", 1, "kovan", 2);
+        hm.forEach( (k,v) -> System.out.println(k));
+        
     }
 
 }
